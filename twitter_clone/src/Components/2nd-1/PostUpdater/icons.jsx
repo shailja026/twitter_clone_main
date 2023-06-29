@@ -42,7 +42,7 @@ function Icons() {
     const aa = [...tweets];
     // const aa =[...add]
     // setTweet(tweet)
-    aa.push(data);
+    aa.unshift(data);
     setTweet(aa);
   };
 

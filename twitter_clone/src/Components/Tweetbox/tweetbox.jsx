@@ -2,7 +2,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Post from '../Post/Post'
-import FlipMove from 'react-flip-move'
+// import FlipMove from 'react-flip-move'
 import Icons from '../2nd-1/PostUpdater/icons'
 
 function Tweetbox() {

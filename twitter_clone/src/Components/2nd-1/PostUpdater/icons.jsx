@@ -39,11 +39,14 @@ function Icons() {
     console.log(data);
 
     // setContent(data);
-    const aa = [...tweets];
-    // const aa =[...add]
-    // setTweet(tweet)
-    aa.unshift(data);
-    setTweet(aa);
+    if(data !== ""){
+      const aa = [...tweets];
+      // const aa =[...add]
+      // setTweet(tweet)
+      aa.unshift(data);
+      setTweet(aa);
+    }
+  
   };
 
   const addLike = () => {
@@ -60,11 +63,14 @@ function Icons() {
     console.log(like);
   };
 
-  const reTweet = () => {
+  const reTweet = (data) => {
     setT(!t);
     if (t) {
       setTweetCount(tweetCount + 1);
       tweet.current.style.color = "blue";
+      // const aa = [...tweets];
+   
+
     } else {
       setTweetCount(tweetCount - 1);
       tweet.current.style.color = "black";
